@@ -1,0 +1,211 @@
+/* General Styles */
+.hidden {
+  display: none;
+}
+
+.auth-container {
+  max-width: 400px;
+  margin: 100px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+/* Navbar */
+.navbar {
+  background: #2c3e50 !important;
+}
+
+.welcome-banner {
+  background: #2c3e50;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+/* Cards & Tables */
+.dashboard-card {
+  background: #f8f9fa;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+.quick-actions .btn {
+  margin: 5px;
+}
+
+/* Status Classes */
+.status-passed {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.status-failed {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.status-scheduled {
+  color: #17a2b8;
+  font-weight: bold;
+}
+
+.status-in-transit {
+  color: #ffc107;
+  font-weight: bold;
+}
+
+.status-delivered {
+  color: #28a745;
+  font-weight: bold;
+}
+
+.defect-status {
+  color: #dc3545;
+  font-weight: bold;
+}
+
+/* Modals */
+.modal-form .form-group {
+  margin-bottom: 15px;
+}
+
+/* Truncate Text */
+.text-truncate {
+  max-width: 200px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Logistics Dashboard Section */
+#logistics {
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+/* Summary Info Boxes */
+.dashboard-boxes {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.box {
+  flex: 1;
+  min-width: 150px;
+  background: #e5e5e5;
+  padding: 10px;
+  text-align: center;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.box.blue { background: #38bdf8; color: white; }
+.box.yellow { background: #facc15; }
+.box.green { background: #22c55e; color: white; }
+
+/* Logistics Form */
+#deliveryForm {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#deliveryForm input,
+#deliveryForm select {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+#deliveryForm button {
+  background: #2563eb;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Logistics Table */
+.table-section {
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}
+
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.table-header button {
+  padding: 6px 12px;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead tr {
+  background: #f1f1f1;
+}
+
+th, td {
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+  text-align: left;
+}
+
+/* New Additions: Responsive, Focus, Transitions, Cursor */
+@media (max-width: 768px) {
+  .dashboard-boxes {
+    flex-direction: column;
+  }
+
+  #deliveryForm {
+    flex-direction: column;
+  }
+
+  #deliveryForm input,
+  #deliveryForm select {
+    flex: unset;
+    width: 100%;
+  }
+}
+
+button,
+a {
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover,
+.table-header button:hover {
+  background: #1d4ed8;
+}
+
+input:focus,
+select:focus,
+button:focus {
+  outline: 2px solid #2563eb;
+  box-shadow: 0 0 3px rgba(37, 99, 235, 0.5);
+  transition: all 0.2s ease-in-out;
+}
